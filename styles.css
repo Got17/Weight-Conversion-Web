@@ -1,0 +1,85 @@
+body {
+    font-family: Tahoma, sans-serif;
+}
+.exchange-numbers {
+    font-size: 25px;
+}
+
+h1 {
+    color: blue;
+    text-align: left;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 100px;
+}
+table {
+    width: 100%;
+}
+td {
+    text-align: center;
+  }
+  .change-title { 
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+.conversion-form {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.conversion-form label {
+    margin: 0 10px 0 0;
+    white-space: nowrap;
+}
+
+.conversion-form select,
+.conversion-form input {
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: auto; 
+}
+@media (min-width: 768px) {
+    .conversion-form select,
+    .conversion-form input {
+        width: 200px; 
+    }
+}
+.result-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.result-container label {
+    margin-right: 10px;
+}
+
+#conversion-result {
+    flex-grow: 1; 
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+#changed-button {
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: pointer; 
+}
+

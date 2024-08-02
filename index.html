@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Conversion of Weight Units</h1>
+    <table>
+        <tr>
+            <td><img src="scale.png" alt="scale"></td>
+            <td><b class="exchange-numbers">exchange numbers</b></td>
+            <td><img src="scale.png" alt="scale"></td>
+        </tr>
+    </table>
+    <br>
+    <p class="change-title">Change:</p>
+    <div class="conversion-form" id="conversion-form">
+        
+        <label for="unit-from">Choose what you want to change:</label>
+        <select id="unit-from" name="unit-from">    
+            <option value="pikogram">pikogram</option>
+            <option value="nanogram">nanogram</option>
+            <option value="mikrogram">mikrogram</option>
+            <option value="milligram">milligram</option>
+            <option value="dekagram">dekagram</option>
+            <option value="gram">gram</option>
+            <option value="kilogram">kilogram</option>
+            <option value="quintal">quintal</option>
+            <option value="tons">tons</option>
+            <option value="font">font</option>
+            <option value="ounce">ounce</option>
+            <option value="karat">karat</option>
+
+        </select>
+        <label for="unit-input">Enter the unit you want to exchange </label>
+        <input type="number" id="unit-input" placeholder="Enter value" value="0">
+        <label for="unit-to">Choose what you want to change:</label>
+        <select id="unit-to" name="unit-to">
+            <option value="pikogram">pikogram</option>
+            <option value="nanogram">nanogram</option>
+            <option value="mikrogram">mikrogram</option>
+            <option value="milligram">milligram</option>
+            <option value="dekagram">dekagram</option>
+            <option value="gram">gram</option>
+            <option value="kilogram">kilogram</option>
+            <option value="quintal">quintal</option>
+            <option value="tons">tons</option>
+            <option value="font">font</option>
+            <option value="ounce">ounce</option>
+            <option value="karat">karat</option>
+
+        </select>
+    </div>
+    <div class="result-container" id="result-container">
+        <label for="conversion-result">Change result:</label>
+        <input type="text" id="conversion-result" placeholder="Show value" readonly>
+    </div>
+    <button id="changed-button" onclick="convertUnits()">changed</button>
+    <script src="script.js"></script>
+</body>
+</html>
